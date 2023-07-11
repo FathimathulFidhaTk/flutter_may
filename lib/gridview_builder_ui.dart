@@ -11,18 +11,7 @@ void main() {
 class gv_builder extends StatelessWidget {
   @override
   var num = ["1", '2', '3', '4', '5', '6', '7', '8', '9', '10'];
-  var dig = [
-    "0/20",
-    '0/20',
-    '0/20',
-    '0/20',
-    '0/20',
-    '0/20',
-    '0/20',
-    '0/20',
-    '0/20',
-    '0/20'
-  ];
+  var dig = ["0/20", '0/20', '0/20', '0/20', '0/20', '0/20', '0/20', '0/20', '0/20', '0/20'];
 
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,14 +25,14 @@ class gv_builder extends StatelessWidget {
               children: [
                 Text(
                   "  Some Text",
-                  style: TextStyle(fontSize: 30, color: Colors.lightGreen),
+                  style: TextStyle(fontSize: 25, color: Colors.greenAccent),
                 ),
                 Padding(
                   padding:
-                      const EdgeInsets.only(left: 263, top: 15, bottom: 15),
+                      const EdgeInsets.only(left: 300, top: 15, bottom: 15),
                   child: Text(
                     '0/10',
-                    style: TextStyle(fontSize: 30, color: Colors.lightGreen),
+                    style: TextStyle(fontSize: 25, color: Colors.greenAccent),
                   ),
                 ),
               ],
@@ -53,7 +42,7 @@ class gv_builder extends StatelessWidget {
               physics: NeverScrollableScrollPhysics(),
               shrinkWrap: true,
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 5, crossAxisSpacing: 5, mainAxisSpacing: 5),
+                  crossAxisCount: 5, crossAxisSpacing: 10, mainAxisSpacing: 10),
               itemCount: 10,
               itemBuilder: (context, index) {
                 return Container(
@@ -64,9 +53,9 @@ class gv_builder extends StatelessWidget {
                       children: [
                         Text(
                           num[index],
-                          style: TextStyle(fontSize: 22),
+                          style: TextStyle(fontSize: 22,color: Colors.white),
                         ),
-                        Text(dig[index])
+                        Text(dig[index],style: TextStyle(color: Colors.white),)
                       ],
                     ),
                   ),
@@ -76,13 +65,13 @@ class gv_builder extends StatelessWidget {
             children: [
               Text(
                 "  Some Text",
-                style: TextStyle(fontSize: 30, color: Colors.lightGreen),
+                style: TextStyle(fontSize: 25, color: Colors.greenAccent),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 263, top: 15, bottom: 15),
+                padding: const EdgeInsets.only(left: 300, top: 15, bottom: 15),
                 child: Text(
                   '0/10',
-                  style: TextStyle(fontSize: 30, color: Colors.lightGreen),
+                  style: TextStyle(fontSize: 25, color: Colors.greenAccent),
                 ),
               ),
             ],
@@ -91,7 +80,7 @@ class gv_builder extends StatelessWidget {
               physics: NeverScrollableScrollPhysics(),
               shrinkWrap: true,
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 5, crossAxisSpacing: 5, mainAxisSpacing: 5),
+                  crossAxisCount: 5, crossAxisSpacing: 10, mainAxisSpacing: 10),
               itemCount: 10,
               itemBuilder: (context, index) {
                 return Container(
@@ -102,9 +91,9 @@ class gv_builder extends StatelessWidget {
                       children: [
                         Text(
                           num[index],
-                          style: TextStyle(fontSize: 22),
+                          style: TextStyle(fontSize: 22,color: Colors.white),
                         ),
-                        Text(dig[index])
+                        Text(dig[index],style: TextStyle(color: Colors.white),)
                       ],
                     ),
                   ),
@@ -114,13 +103,13 @@ class gv_builder extends StatelessWidget {
             children: [
               Text(
                 "  Some Text",
-                style: TextStyle(fontSize: 30, color: Colors.lightGreen),
+                style: TextStyle(fontSize: 25, color: Colors.greenAccent),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 263, top: 15, bottom: 15),
+                padding: const EdgeInsets.only(left: 300, top: 15, bottom: 15),
                 child: Text(
                   '0/10',
-                  style: TextStyle(fontSize: 30, color: Colors.lightGreen),
+                  style: TextStyle(fontSize: 25, color: Colors.greenAccent),
                 ),
               ),
             ],
@@ -129,7 +118,7 @@ class gv_builder extends StatelessWidget {
               physics: NeverScrollableScrollPhysics(),
               shrinkWrap: true,
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 5, crossAxisSpacing: 5, mainAxisSpacing: 5),
+                  crossAxisCount: 5, crossAxisSpacing: 10, mainAxisSpacing: 10),
               itemCount: 10,
               itemBuilder: (context, index) {
                 return Container(
@@ -140,9 +129,9 @@ class gv_builder extends StatelessWidget {
                       children: [
                         Text(
                           num[index],
-                          style: TextStyle(fontSize: 22),
+                          style: TextStyle(fontSize: 22,color: Colors.white),
                         ),
-                        Text(dig[index])
+                        Text(dig[index],style: TextStyle(color: Colors.white),)
                       ],
                     ),
                   ),
