@@ -13,6 +13,30 @@ void main() {
 
 class booking_ui extends StatelessWidget {
   @override
+
+   final List rooms = [
+    {
+      "image":"assets/images/room1.jpg",
+      "title":"Awesome Room"
+    },
+    {
+      "image":"assets/images/room2.jpg",
+      "title":"Peacefull Room"
+    },
+    {
+      "image":"assets/images/room3.jpg",
+      "title":"Beautiful Room"
+    },
+    {
+      "image":"assets/images/room4.jpg",
+      "title":"Vintage Room"
+    },
+    {
+      "image":"assets/images/room5.jpg",
+      "title":"Guest Room"
+    }
+  ];
+
   Widget build(BuildContext context) {
     return Scaffold(
       body: CustomScrollView(
@@ -26,7 +50,7 @@ class booking_ui extends StatelessWidget {
             ),
             actions: [
               IconButton(
-                  onPressed: () {}, icon: Icon(Icons.send_to_mobile_sharp)),
+                  onPressed: () {}, icon: Icon(Icons.favorite_border)),
             ],
             floating: true,
             flexibleSpace: ListView(
@@ -70,8 +94,99 @@ class booking_ui extends StatelessWidget {
           SliverToBoxAdapter(
             child: buildCategories(),
           ),
+          SliverList(delegate: SliverChildBuilderDelegate((context, index){
+            return buildrooms(context,index);
+          },
+            childCount: 5
+          ),
+          )
+
         ],
       ),
+    );
+  }
+  Widget buildrooms(BuildContext context, int index) {
+    var room = rooms[index % rooms.length];
+    return Container(
+      margin: EdgeInsets.all(20),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(5),
+          child: Container(
+            child: Material(
+              elevation: 5,
+              borderRadius: BorderRadius.circular(5),
+              color: Colors.lightGreenAccent,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Stack(
+                    children: [
+                      Image.asset(room['image']),
+                      Positioned(
+                        right: 10,
+                          top: 10,
+                          child:
+                      Icon(Icons.star,color: Colors.white,)
+                      ),
+                      Positioned(
+                        right: 10,
+                          top: 10,
+                          child:
+                          Icon(Icons.star_border)
+                      ),Positioned(
+                        right: 10,
+                          top: 10,
+                          child:
+                          Icon(Icons.star_border)
+                      ),
+
+                    ],
+                  ),
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(room['title'],style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+                          SizedBox(height: 12,),
+
+                          Text('Kakkanad,Kochi'),
+                          SizedBox(height: 2,),
+                          Row(
+                            children: [
+                              Icon(Icons.star,color: Colors.yellowAccent,),
+                              Icon(Icons.star,color: Colors.yellowAccent),
+                              Icon(Icons.star,color: Colors.yellowAccent),
+                              Icon(Icons.star,color: Colors.yellowAccent),
+                              Icon(Icons.star,color: Colors.yellowAccent),
+                              Icon(Icons.star,color: Colors.yellowAccent),
+
+                              SizedBox(width: 20,),
+                              Text('(220 reviews)'),
+                              SizedBox(width: 120,),
+                              Container(
+                                color: Colors.white,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(18.0),
+                                  child: Text('\$40'),
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    
+                  )
+                ],
+              ),
+            ),
+          ),
+        ),
+
+
+
     );
   }
 
