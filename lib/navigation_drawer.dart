@@ -54,7 +54,8 @@ class nav_drawer extends StatelessWidget{
 
                 ],
               ),
-            ),)
+            ),
+          )
     );
   }
 
