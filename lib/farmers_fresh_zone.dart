@@ -120,7 +120,7 @@ class slider extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.all(3),
                       height: 30,
-                      width: 130,
+                      width: 115,
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.greenAccent),
                         borderRadius: BorderRadius.circular(12),
