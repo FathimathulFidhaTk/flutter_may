@@ -36,7 +36,7 @@ class _loginpageState extends State<loginpage> {
                 children: [
               Center(
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 80),
+                  padding: const EdgeInsets.only(top: 100),
                   child: Text(
                     'Login Page',
                     style: TextStyle(fontSize: 35, color: Colors.blue,fontWeight: FontWeight.bold),
@@ -44,7 +44,7 @@ class _loginpageState extends State<loginpage> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 85, left: 100, right: 100),
+                padding: const EdgeInsets.only(top: 50, left: 100, right: 100),
                 child: TextFormField(
                   decoration: InputDecoration(
                     prefixIcon: Icon(Icons.account_circle_rounded),
@@ -101,7 +101,7 @@ class _loginpageState extends State<loginpage> {
                 ),
               ),
               Padding(
-                  padding: const EdgeInsets.only(left: 160, right: 160, top: 25),
+                  padding: const EdgeInsets.only(left: 110, right: 110, top: 25),
                   child: Center(
                     child: ElevatedButton(
                         onPressed: () {
@@ -123,7 +123,7 @@ class _loginpageState extends State<loginpage> {
                         )),
                   )),
               Padding(
-                padding: const EdgeInsets.only(left: 138, right: 100, top: 18),
+                padding: const EdgeInsets.only(left: 130, right: 30, top: 18),
                 child: Row(
                   children: [
                     Text('Does not have account?'),
