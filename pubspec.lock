@@ -9,6 +9,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.1.6"
+  animated_icon_button:
+    dependency: "direct main"
+    description:
+      name: animated_icon_button
+      sha256: a483ca86d56fe358f4913ba79be8f0bd8fca3282de06f1ae3df108aece5b2a04
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.2"
   animated_splash_screen:
     dependency: "direct main"
     description:
@@ -105,6 +113,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.5"
+  diffutil_dart:
+    dependency: transitive
+    description:
+      name: diffutil_dart
+      sha256: e0297e4600b9797edff228ed60f4169a778ea357691ec98408fa3b72994c7d06
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.0"
   dropdown_button2:
     dependency: "direct main"
     description:
@@ -192,6 +208,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.1"
+  freezed_annotation:
+    dependency: transitive
+    description:
+      name: freezed_annotation
+      sha256: c3fd9336eb55a38cc1bbd79ab17573113a8deccd0ecbbf926cca3c62803b5c2d
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.4.1"
   graphs:
     dependency: transitive
     description:
@@ -200,6 +224,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.3.1"
+  great_list_view:
+    dependency: "direct main"
+    description:
+      name: great_list_view
+      sha256: "4e528745d65c95d731b7c90af620822895233943ff531ad7a5d2b5a43e187b12"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.3"
   hero_animation:
     dependency: "direct main"
     description:
@@ -232,6 +264,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.7"
+  json_annotation:
+    dependency: transitive
+    description:
+      name: json_annotation
+      sha256: b10a7b2ff83d83c777edba3c6a0f97045ddadd56c944e1a23a3fdf43a1bf4467
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.8.1"
   lints:
     dependency: transitive
     description:
@@ -240,6 +280,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.0"
+  liquid_swipe:
+    dependency: "direct main"
+    description:
+      name: liquid_swipe
+      sha256: "04277568a4a5a5e8e1dfa8b222b4e497e294cf64e72113d936fcc54ef0e29149"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.1.0"
   lottie:
     dependency: "direct main"
     description:
@@ -445,6 +493,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
+  worker_manager:
+    dependency: transitive
+    description:
+      name: worker_manager
+      sha256: "42501e49ee0acad9eeda562984e3dcfe6fe3d26f2d8dc410bd76308a86447eb5"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.0.3"
 sdks:
   dart: ">=3.0.1 <4.0.0"
   flutter: ">=3.10.0"
