@@ -19,7 +19,7 @@ class saved extends StatelessWidget{
            Text('Saved',style: TextStyle(color: Colors.white,fontSize: 20),),
            Padding(
              padding: const EdgeInsets.only(left: 310,),
-             child: Text('Delete',style: TextStyle(color: Colors.white),),
+             child: Text('Delete',style: TextStyle(color: Colors.white70),),
            ),
              Padding(
                padding: const EdgeInsets.only(top: 20),

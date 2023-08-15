@@ -10,7 +10,7 @@ class example1 extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('List Page'),),
+      appBar: AppBar(title: Text('List Page',style: TextStyle(fontFamily: "Poppins"),),),
       body: ListView(
         children: [
           Card(
