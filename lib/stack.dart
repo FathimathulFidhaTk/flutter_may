@@ -49,8 +49,8 @@ class stackk extends StatelessWidget{
             ),
           ),
           Positioned(
-            left: 200,
-            right: 200,
+            left: 180,
+            right: 180,
             top: 200,
             bottom: 200,
             child: Container(
@@ -58,8 +58,8 @@ class stackk extends StatelessWidget{
             ),
           ),
           Positioned(
-            left: 225,
-            right: 225,
+            left: 200,
+            right: 200,
             bottom: 230,
             top: 230,
             child: Container(

@@ -15,6 +15,7 @@ void main(){
 class appbarr extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
+    var mQuerry = MediaQuery.of(context).size;
     return DefaultTabController(length: 4,
       child: Scaffold(
         appBar: AppBar(
@@ -83,8 +84,7 @@ class appbarr extends StatelessWidget{
                         borderRadius: BorderRadius.circular(20),
                       color: Colors.green,
                       ),
-                        height: 40,
-                        width: 290,
+                        width: mQuerry.width * 0.7,
                         child: TextButton(onPressed: (){}, child: Text('Start your community',style: TextStyle(color: Colors.white),))
                       )
                   ],
@@ -93,9 +93,8 @@ class appbarr extends StatelessWidget{
             ),
 
 
+
 //...........chats
-
-
             ListView(
               children: [
                 SizedBox(height: 15,),
@@ -108,12 +107,12 @@ class appbarr extends StatelessWidget{
                   title: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(right: 280),
+                        padding: const EdgeInsets.only(right: 190,),
                         child: Text('Fidha',style: TextStyle(fontWeight: FontWeight.bold),),
                       ),
                       SizedBox(height: 3.5,),
                       Padding(
-                        padding: const EdgeInsets.only(right: 150),
+                        padding: const EdgeInsets.only(right: 60),
                         child: Text('Heyy..!!, Whatsppp.......!!!'),
                       ),
                       SizedBox(height: 5,),
@@ -121,21 +120,20 @@ class appbarr extends StatelessWidget{
                   ),
                   trailing: Column(
                     children: [
+                      SizedBox(height: 6,),
                       Text('9:54 pm',style: TextStyle(color: Colors.green),),
                       SizedBox(height: 6),
                       Padding(
-                        padding: const EdgeInsets.only(left: 25),
+                        padding: const EdgeInsets.only(left: 10),
                         child: CircleAvatar(
                           backgroundColor: Colors.green,
-                          radius: 10,
+                          radius: 12,
                           child: Text('1',style: TextStyle(color: Colors.white,fontSize: 12),),
                         ),
                       )
                     ],
                   ),
                 ),
-
-
                 Divider(color: Colors.white10,),
                 ListTile(
                   leading: CircleAvatar(
@@ -147,12 +145,12 @@ class appbarr extends StatelessWidget{
                   title: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(right: 298),
+                        padding: const EdgeInsets.only(right: 210,),
                         child: Text('Eva',style: TextStyle(fontWeight: FontWeight.bold),),
                       ),
                       SizedBox(height: 3.5,),
                       Padding(
-                        padding: const EdgeInsets.only(right: 100),
+                        padding: const EdgeInsets.only(right: 10),
                         child: Text('How was your studies going???'),
                       ),
                       SizedBox(height: 5,),
@@ -160,13 +158,14 @@ class appbarr extends StatelessWidget{
                   ),
                   trailing: Column(
                     children: [
+                      SizedBox(height: 8,),
                       Text('7:15 pm',style: TextStyle(color: Colors.green),),
                       SizedBox(height: 6),
                       Padding(
-                        padding: const EdgeInsets.only(left: 25),
+                        padding: const EdgeInsets.only(left: 12),
                         child: CircleAvatar(
                           backgroundColor: Colors.green,
-                          radius: 10,
+                          radius: 12,
                           child: Text('3',style: TextStyle(color: Colors.white,fontSize: 12),),
                         ),
                       )
@@ -185,12 +184,12 @@ class appbarr extends StatelessWidget{
                   title: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(right: 280),
+                        padding: const EdgeInsets.only(right: 180),
                         child: Text('Geetha',style: TextStyle(fontWeight: FontWeight.bold),),
                       ),
                       SizedBox(height: 3.5,),
                       Padding(
-                        padding: const EdgeInsets.only(right: 225),
+                        padding: const EdgeInsets.only(right: 130),
                         child: Text('How are you??'),
                       ),
                       SizedBox(height: 5,),
@@ -201,10 +200,10 @@ class appbarr extends StatelessWidget{
                       Text('6:55 pm',style: TextStyle(color: Colors.green),),
                       SizedBox(height: 6),
                       Padding(
-                        padding: const EdgeInsets.only(left: 25),
+                        padding: const EdgeInsets.only(left: 12),
                         child: CircleAvatar(
                           backgroundColor: Colors.green,
-                          radius: 10,
+                          radius: 12,
                           child: Text('2',style: TextStyle(color: Colors.white,fontSize: 12),),
                         ),
                       )
@@ -214,7 +213,6 @@ class appbarr extends StatelessWidget{
               ],
             ),
 
-            list_custom(),
 
         //.....Callsss
 
@@ -229,11 +227,11 @@ class appbarr extends StatelessWidget{
               title: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(right: 280),
+                    padding: const EdgeInsets.only(right: 195),
                     child: Text('Create call link'),
                   ),SizedBox(height: 5,),
                   Padding(
-                    padding: const EdgeInsets.only(right: 135),
+                    padding: const EdgeInsets.only(right: 55),
                     child: Text('Share a link for your WhatsApp call',style: TextStyle(color: Colors.grey),),
                   ),
                 ],
@@ -241,8 +239,8 @@ class appbarr extends StatelessWidget{
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 25,top: 10),
-              child: Text("Recent",style: TextStyle(fontWeight: FontWeight.bold),),
+              padding: const EdgeInsets.only(left: 25,top: 19),
+              child: Text("Recent",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
             ),
             SizedBox(height: 15,),
             ListTile(
@@ -254,7 +252,7 @@ class appbarr extends StatelessWidget{
               title: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(right: 310),
+                    padding: const EdgeInsets.only(right: 212),
                     child: Text('Fidha'),
                   ),
                   SizedBox(height: 5,),
@@ -282,7 +280,7 @@ class appbarr extends StatelessWidget{
               title: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(right: 310),
+                    padding: const EdgeInsets.only(right: 230),
                     child: Text('Eva'),
                   ),
                   SizedBox(height: 5,),

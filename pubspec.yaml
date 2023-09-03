@@ -60,7 +60,9 @@ dependencies:
   awesome_icons: ^1.1.0
   responsive_sizer: ^3.2.0
   flutter_network_connectivity: ^0.0.6
-  connectivity_plus: ^4.0.2
+  shared_preferences: ^2.2.0
+  line_chart: ^1.1.11
+  syncfusion_flutter_charts: ^22.2.9
 
 
 
