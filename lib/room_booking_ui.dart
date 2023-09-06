@@ -68,7 +68,7 @@ class booking_ui extends StatelessWidget {
                         fontSize: 25.0,
                         fontStyle: FontStyle.normal)),
                 Container(
-                  margin: EdgeInsets.symmetric(horizontal: 60, vertical: 10),
+                  margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
                   padding: EdgeInsets.all(2),
                   decoration: BoxDecoration(
                       color: Colors.white,
@@ -167,11 +167,11 @@ class booking_ui extends StatelessWidget {
 
                             SizedBox(width: 20,),
                             Text('(220 reviews)'),
-                            SizedBox(width: 120,),
+                            SizedBox(width: 30,),
                             Container(
                               color: Colors.white,
                               child: Padding(
-                                padding: const EdgeInsets.all(18.0),
+                                padding: const EdgeInsets.all(8.0),
                                 child: Text('\$40'),
                               ),
                             )

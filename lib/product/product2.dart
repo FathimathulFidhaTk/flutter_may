@@ -1,7 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_may/dummy_products.dart';
+import 'package:flutter_may/product/dummy_products.dart';
 
 
 class product2 extends StatelessWidget{

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_may/dummy_products.dart';
-import 'package:flutter_may/product2.dart';
+import 'package:flutter_may/product/dummy_products.dart';
+import 'package:flutter_may/product/product2.dart';
 
 void main(){
   runApp(MaterialApp(home: product1(),

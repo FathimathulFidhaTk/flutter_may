@@ -30,37 +30,25 @@ class profile_ui extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 120, top: 25),
+                  padding: const EdgeInsets.only(top: 25,left: 100,right: 50),
                   child: Container(
                     child: Row(
                       children: [
-                        SizedBox(
-                          width: 20,
-                        ),
                         CircleAvatar(
                           backgroundImage:
                               AssetImage("assets/images/facebook.png"),
                           radius: 25,
                           backgroundColor: Colors.white24,
                         ),
-                        SizedBox(
-                          width: 10,
-                        ),
                         CircleAvatar(
                           backgroundImage:
                               AssetImage("assets/images/google.png"),
                           backgroundColor: Colors.white24,
                         ),
-                        SizedBox(
-                          width: 10,
-                        ),
                         CircleAvatar(
                           backgroundImage:
                               AssetImage("assets/images/twitter.png"),
                           backgroundColor: Colors.white24,
-                        ),
-                        SizedBox(
-                          width: 10,
                         ),
                         CircleAvatar(
                           backgroundImage:
@@ -112,7 +100,7 @@ class profile_ui extends StatelessWidget {
                   child: Column(
                 children: [
                   Container(
-                    margin: EdgeInsets.only(left: 30, right: 30),
+                    margin: EdgeInsets.only(left: 15, right: 15),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         color: Colors.grey[200]),
@@ -135,7 +123,7 @@ class profile_ui extends StatelessWidget {
                     height: 15,
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: 30, right: 30),
+                    margin: EdgeInsets.only(left: 15, right: 15),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(40),
                         color: Colors.grey[200]),
@@ -156,7 +144,7 @@ class profile_ui extends StatelessWidget {
                     height: 15,
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: 30, right: 30),
+                    margin: EdgeInsets.only(left: 15, right: 15),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
                         color: Colors.grey[200]),
@@ -177,7 +165,7 @@ class profile_ui extends StatelessWidget {
                     height: 15,
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: 30, right: 30),
+                    margin: EdgeInsets.only(left: 15, right: 15),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
                         color: Colors.grey[200]),
@@ -198,7 +186,7 @@ class profile_ui extends StatelessWidget {
                     height: 15,
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: 30, right: 30),
+                    margin: EdgeInsets.only(left: 15, right: 15),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
                         color: Colors.grey[200]),

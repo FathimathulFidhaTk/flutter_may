@@ -51,7 +51,7 @@ class _news_hourState extends State<news_hour> {
                 style: TextStyle(color: Colors.black, fontSize: 16),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 310),
+                padding: const EdgeInsets.only(left: 200),
                 child: Icon(
                   Icons.settings_outlined,
                   color: Colors.black38,
@@ -246,7 +246,7 @@ class _news_hourState extends State<news_hour> {
                     child: Text('Notify to All Users'),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 200, top: 50),
+                    padding: const EdgeInsets.only(left: 65, top: 50),
                     child: IconButton(
                       onPressed: () {},
                       icon: Icon(
